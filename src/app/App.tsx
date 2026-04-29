@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
+import ebookFamilyImage from '../imports/ChatGPT_Image_27_04_2026,_11_11_50.png';
+import dentistaImage from '../imports/dentista.jpg';
 
 export default function App() {
   const [formData, setFormData] = useState({
@@ -216,18 +218,18 @@ export default function App() {
           <div className="grid grid-cols-3 gap-6">
             {[
               {
-                title: 'Alinhamento com Invisalign®',
-                subtitle: 'Tratamento de 14 meses · Adulto, 34 anos',
+                title: 'Alinhamento',
+                subtitle: 'Tratamento de 14 meses · Adulto, 52 anos',
                 image: 'https://images.unsplash.com/photo-1776400985210-92f654712d30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZW50YWwlMjBiZWZvcmUlMjBhZnRlciUyMHNtaWxlfGVufDF8fHx8MTc3NjY3ODU2N3ww&ixlib=rb-4.1.0&q=80&w=1080'
               },
               {
-                title: 'Implante unitário com carga imediata',
-                subtitle: '1 dia de cirurgia · Adulto, 52 anos',
+                title: 'Implante dentário',
+                subtitle: '3 dias de cirurgia · Adulto, 37 anos',
                 image: 'https://images.unsplash.com/photo-1679911522750-aeedd9c88550?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw1fHxkZW50YWwlMjBiZWZvcmUlMjBhZnRlciUyMHNtaWxlfGVufDF8fHx8MTc3NjY3ODU2N3ww&ixlib=rb-4.1.0&q=80&w=1080'
               },
               {
-                title: 'Reabilitação oral completa',
-                subtitle: 'All-on-4® · Adulto, 61 anos',
+                title: 'Limpeza e manutenção',
+                subtitle: 'Check-up · Adulto, 29 anos',
                 image: 'https://images.unsplash.com/photo-1675526607070-f5cbd71dde92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw5fHxkZW50YWwlMjBiZWZvcmUlMjBhZnRlciUyMHNtaWxlfGVufDF8fHx8MTc3NjY3ODU2N3ww&ixlib=rb-4.1.0&q=80&w=1080'
               }
             ].map((item, i) => (
@@ -264,14 +266,14 @@ export default function App() {
           <div className="grid grid-cols-3 gap-6">
             {[
               {
-                text: 'Fiz o tratamento com Invisalign e o resultado superou todas as expectativas. A equipa é extremamente profissional e atenciosa, e o processo foi muito mais confortável do que imaginava.',
+                text: 'Fiz o tratamento de ortodontia e o resultado superou todas as expectativas. A equipa é extremamente profissional e atenciosa, e o processo foi muito mais confortável do que imaginava.',
                 name: 'Maria R.',
-                type: 'Ortodontia · Invisalign®'
+                type: 'Ortodontia'
               },
               {
                 text: 'Aos 58 anos fiz implantes e foi a melhor decisão da minha vida. Em menos de 24 horas saí da clínica com dentes novos. A diferença na minha qualidade de vida é enorme.',
                 name: 'João F.',
-                type: 'Implantologia · Carga Imediata'
+                type: 'Implantologia'
               },
               {
                 text: 'Excelente clínica! Fui com muito receio, mas a Dra. foi incrivelmente paciente. O espaço é moderno, limpo e confortável. Recomendo a toda a família.',
@@ -325,6 +327,60 @@ export default function App() {
         </div>
       </section>
 
+      {/* E-book Section */}
+      <section id="ebook" className="py-20 px-6" style={{ background: '#fafafa' }}>
+        <div className="max-w-[1200px] mx-auto">
+          <div className="text-center mb-4">
+            <p className="text-[.75rem] uppercase tracking-wider mb-2" style={{ color: 'var(--gold)', fontWeight: 600 }}>
+              Recurso Gratuito
+            </p>
+            <h2 style={{ fontFamily: 'var(--sans)', fontSize: '2.5rem', fontWeight: 400, color: '#1a1a1a', marginBottom: '.5rem' }}>
+              Guia exclusivo de saúde oral
+            </h2>
+            <div className="w-12 h-1 mx-auto rounded-full mb-4" style={{ background: 'var(--gold)' }}></div>
+            <p className="text-[.95rem] max-w-[600px] mx-auto" style={{ color: '#666' }}>
+              Descarregue o nosso e-book gratuito com dicas profissionais para cuidar do sorriso de toda a família.
+            </p>
+          </div>
+
+          <div className="flex justify-center mt-12">
+            <div className="w-full max-w-[400px]">
+              <div className="bg-white border rounded-lg overflow-hidden" style={{ borderColor: '#e5e5e5' }}>
+                <div className="relative">
+                  <img
+                    src={ebookFamilyImage}
+                    alt="Guia Prático para Cuidar do Sorriso"
+                    className="w-full h-[300px] object-cover"
+                  />
+                  <div className="absolute top-4 left-4 px-3 py-1 rounded text-[.7rem] uppercase tracking-wider" style={{ background: '#1a1a1a', color: '#fff', fontWeight: 600 }}>
+                    Grátis
+                  </div>
+                </div>
+                <div className="p-6">
+                  <p className="text-[.75rem] uppercase tracking-wider mb-2" style={{ color: 'var(--gold)', fontWeight: 600 }}>
+                    Saúde Oral Familiar
+                  </p>
+                  <h3 className="mb-3" style={{ fontSize: '1.3rem', fontWeight: 500, color: '#1a1a1a', lineHeight: 1.3 }}>
+                    Guia Prático para Cuidar do Sorriso de Toda a Família
+                  </h3>
+                  <p className="text-[.9rem] mb-5" style={{ color: '#666', lineHeight: 1.6 }}>
+                    Descubra as melhores práticas de higiene oral, dicas de prevenção e cuidados específicos para cada idade.
+                  </p>
+                  <a
+                    href="https://raw.githubusercontent.com/MarianaCarvalho13/Clinicapredileta/main/Guia%20Pr%C3%A1tico%20para%20Cuidar%20do%20Sorriso%20de%20Toda%20a%20Fam%C3%ADlia.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="no-underline w-full block text-center rounded-md px-6 py-3 text-[.9rem]"
+                    style={{ background: '#1a1a1a', color: '#fff', fontWeight: 500 }}>
+                    Descarregar E-book
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact */}
       <section id="contacto" className="py-20 px-6" style={{ background: '#fff' }}>
         <div className="max-w-[1200px] mx-auto">
@@ -338,9 +394,9 @@ export default function App() {
           <div className="grid grid-cols-2 gap-12">
             <div>
               <div className="mb-8">
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1684607632041-32d729cdee35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZW50aXN0JTIwcGF0aWVudCUyMHNtaWxpbmclMjBoYXBweXxlbnwxfHx8fDE3NzY2Nzc0MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  alt="Paciente feliz"
+                <img
+                  src={dentistaImage}
+                  alt="Dentista com paciente"
                   className="w-full h-[300px] object-cover rounded-lg mb-6"
                 />
               </div>
@@ -549,10 +605,10 @@ export default function App() {
                 Ligações Úteis
               </h4>
               <ul className="list-none space-y-2 m-0 p-0">
-                {['sobre', 'servicos', 'testemunhos', 'contacto'].map((link, i) => (
+                {['sobre', 'servicos', 'testemunhos', 'ebook', 'contacto'].map((link, i) => (
                   <li key={i}>
                     <a href={`#${link}`} onClick={(e) => { e.preventDefault(); scrollToSection(link); }} className="no-underline text-[.88rem]" style={{ color: '#999' }}>
-                      {link === 'sobre' ? 'Sobre Nós' : link === 'servicos' ? 'Serviços' : link.charAt(0).toUpperCase() + link.slice(1)}
+                      {link === 'sobre' ? 'Sobre Nós' : link === 'servicos' ? 'Serviços' : link === 'ebook' ? 'E-book' : link.charAt(0).toUpperCase() + link.slice(1)}
                     </a>
                   </li>
                 ))}
