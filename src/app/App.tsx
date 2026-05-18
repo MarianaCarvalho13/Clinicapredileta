@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
 import ebookFamilyImage from '../imports/ChatGPT_Image_27_04_2026,_11_11_50.png';
 import dentistaImage from '../imports/dentista.jpg';
+import ebookCoverImage from '../imports/Guia_Pr_tico_para_Cuidar_do_Sorriso_de_Toda_a_Fam_lia-1.jpg';
 
 export default function App() {
   const [formData, setFormData] = useState({
@@ -81,7 +82,7 @@ export default function App() {
                 fontSize: '1.1rem',
                 lineHeight: 1.6
               }}>
-                Especialistas em ortodontia, prevenção e implantologia com tecnologia de ponta e uma abordagem personalizada para cada paciente.
+                Especialista em ortodontia, prevenção e implantologia com tecnologia de ponta e uma abordagem personalizada para cada paciente.
               </p>
 
               <div className="flex gap-4 mb-12">
@@ -346,11 +347,11 @@ export default function App() {
           <div className="flex justify-center mt-12">
             <div className="w-full max-w-[400px]">
               <div className="bg-white border rounded-lg overflow-hidden" style={{ borderColor: '#e5e5e5' }}>
-                <div className="relative">
+                <div className="relative" style={{ background: '#f5f5f5' }}>
                   <img
-                    src={ebookFamilyImage}
+                    src={ebookCoverImage}
                     alt="Guia Prático para Cuidar do Sorriso"
-                    className="w-full h-[300px] object-cover"
+                    className="w-full h-[500px] object-contain"
                   />
                   <div className="absolute top-4 left-4 px-3 py-1 rounded text-[.7rem] uppercase tracking-wider" style={{ background: '#1a1a1a', color: '#fff', fontWeight: 600 }}>
                     Grátis
@@ -367,7 +368,7 @@ export default function App() {
                     Descubra as melhores práticas de higiene oral, dicas de prevenção e cuidados específicos para cada idade.
                   </p>
                   <a
-                    href="https://raw.githubusercontent.com/MarianaCarvalho13/Clinicapredileta/main/Guia%20Pr%C3%A1tico%20para%20Cuidar%20do%20Sorriso%20de%20Toda%20a%20Fam%C3%ADlia.pdf"
+                    href="https://raw.githubusercontent.com/MarianaCarvalho13/Clinicapredileta/main/Ebook%20-%20Guia%20Pr%C3%A1tico.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="no-underline w-full block text-center rounded-md px-6 py-3 text-[.9rem]"
